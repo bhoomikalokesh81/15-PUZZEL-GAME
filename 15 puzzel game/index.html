@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>15 PUZZLE Game </title>
+    <link rel="icon" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="startReadyOverLay()">
+    <div id="overlay-1" onclick="endReadyOverLay()">
+      <div id="text-1">Are you ready ? <br />Click to go🚴‍♂️</div>
+    </div>
+    <div class="container">
+      <header>
+        <h1 class="name-letters">
+          <span class="fifteen">15</span>Puzzle
+        </h1>
+        <!-- <hr /> -->
+      </header>
+      <section>
+        <div id="game"></div>
+        <div id="controls">
+          <div id="solve"></div>
+          <button class="btn btn-outline-primary" id="shuffle">Reset</button>
+        </div>
+      </section>
+      <div class="social-icons">
+        
+        <a
+          href="https://www.linkedin.com/in/bhoomika-s-l-2a97b3201/"
+          target="_black"
+        >
+          <i title="Linkedin" class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:bhoomikabhoomi812001@gmail.com" target="_black">
+          <i title="My mail" class="far fa-envelope"></i>
+        </a>
+        
+      
+      </div>
+      <footer>CopyRight &copy; <span> Bhoomika </span> 2022.</footer>
+      <div id="overlay-2" onclick="endCongratsOverLay()">
+        <div id="text-2">Congrats , You did it! click to replay</div>
+      </div>
+      <script src="js/app.js"></script>
+    </div>
+  </body>
+</html>
